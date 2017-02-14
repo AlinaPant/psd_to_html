@@ -1,0 +1,36 @@
+@import "compass/reset";
+@import "font";
+@import "variables";
+@import "mixin";
+@import "icon";
+@import "header";
+@import "main";
+@import "footer";
+@import "media";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background-color: $base-bg-color-2;
+	color: $base-bg-color-2;
+	font-family: 'Proxima Nova Bold', sans-serif;
+	font-size: 14px;
+}
+
+.content {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+	text-decoration: none;
+	outline: 0;
+}

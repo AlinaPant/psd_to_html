@@ -1,0 +1,237 @@
+article {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.info-box {
+	@include align;
+	width: 66%;
+	color: $color-text;
+	margin: auto;
+	margin-bottom: 107px;
+}
+
+.info-img {
+	width: 300px;
+	height: 210px;
+	margin-right: 7px;
+
+	&:nth-child(1) {
+		margin-top: 63px;
+		margin-left: 5px;
+	}
+}
+
+.info-text {
+	width: 59%;
+	padding: 37px 0 0 5px;
+
+	&:nth-child(2) {
+		h2 {
+			line-height: 30px;
+			margin-bottom: 12px;
+		}
+
+		p {
+			margin-bottom: 21px;
+		}
+	}
+
+	h2 {
+		font-family: 'OstrichSans-Black';
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-family: 'ProximaNova-Regular';
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
+
+.register {
+	height: 756px;
+	background: -webkit-linear-gradient(265.8deg, $base-bg-color-1 0%, $base-bg-color-1 89%, $base-bg-color-2 89.1%, $base-bg-color-2 100%);
+	background: linear-gradient(-175.8deg, $base-bg-color-1 0%, $base-bg-color-1 89%, $base-bg-color-2 89.1%, $base-bg-color-2 100%);
+	font-family: 'OstrichSans-Black';
+	font-size: 30px;
+	text-align: center;
+
+	p {
+		line-height: 36px;
+		margin-left: -11px;
+		margin-bottom: 25px;
+	}
+
+	.btn {
+		width: 212px;
+		height: 52px;
+		font-family: 'Proxima Nova Bold';
+		font-size: 24px;
+		line-height: 52px;
+		color: $color-register;
+		text-transform: uppercase;
+		border-radius: 35px;
+		border: 3px solid $color-register;
+		padding: 12px 51px;
+		-webkit-transition: all .6s ease;
+		transition: all .6s ease;
+
+		&:hover {
+			color: $base-bg-color-2;
+			background: rgba(46, 204, 113, .22);
+			border-color: $base-bg-color-2;
+		}
+	}
+}
+
+.triangle {
+	position: relative;
+	height: 440px;
+	overflow: hidden;
+	margin-bottom: 6px;
+
+	.top,
+	.bottom {
+		position: absolute;
+		width: 160%;
+		-webkit-transform: rotate(8.8deg);
+		-ms-transform: rotate(8.8deg);
+		transform: rotate(8.8eg);
+	}
+
+	.top {
+		top: -55px;
+		height: 230px;
+		background: $base-bg-color-2;
+    z-index: 15;
+	}
+
+	.bottom {
+		bottom: -157px;
+    left: -202px;
+    height: 450px;
+		background: $base-bg-color-1;
+	}
+
+	.circle {
+    position: relative;
+    top: -371px;
+    left: 13px;
+		width: 787px;
+    height: 787px;
+    border-radius: 50%;
+    background: $color-text;
+    margin: auto;
+    z-index: 10;
+	}
+}
+
+.testimonials {
+	color: #a1a1a1;
+	padding: 34px 12%;
+	margin-bottom: 81px;
+
+	h2 {
+		font-family: 'OstrichSans-Black';
+		font-size: 30px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 58px;
+	}
+
+	.testimonial {
+		position: relative;
+		left: 10px;
+		display: inline-block;
+		width: 380px;
+		float: none;
+		font-family: 'ProximaNova-Regular';
+		font-size: 16px;
+
+		&:nth-child(3) {
+			float: right;
+			top: 90px;
+			margin-right: 20px;
+		}
+
+		&:nth-child(4) {
+			top: 81px;
+		}
+
+		p {
+			line-height: 21px;
+		}
+	}
+}
+
+.comment-box {
+	position: relative;
+	top: -2px;
+	width: 99%;
+	height: 20px;
+	background: $base-bg-color-2;
+	border-bottom: 3px solid #a1a1a1;
+	border-right: 3px solid #a1a1a1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 160px;
+		width: 0;
+		height: 0;
+		border-left: 33px solid transparent;
+		border-right: 3px solid transparent;
+		border-top: 31px solid #a1a1a1;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 165px;
+		width: 0;
+		height: 0;
+		border-left: 25px solid transparent;
+		border-right: 3px solid transparent;
+		border-top: 23px solid $base-bg-color-2;
+		-webkit-transform: skew(1deg);
+		-ms-transform: skew(1deg);
+		transform: skew(1deg);
+	}
+}
+
+.who-comment {
+	text-align: right;
+
+	.img-author {
+		position: relative;
+		top: 9px;
+		right: 7px;
+		display: inline-block;
+		width: 47px;
+		height: 47px;
+		border-radius: 50%;
+		background: $base-bg-color-1;
+	}
+
+	.author {
+		display: inline-block;
+		font-family: 'Proxima Nova Bold';
+		text-align: left;
+		margin-top: 18px;
+		margin-right: 4px;
+
+		p {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		p+p {
+			font-family: 'ProximaNova-Regular';
+			font-size: 14px;
+		}
+	}
+}
